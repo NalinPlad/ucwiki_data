@@ -1,0 +1,13 @@
+{
+  "name": "ucwiki_data",
+  "version": "1.0.0",
+  "main": "collect_edits.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "collect": "node collect_edits.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
