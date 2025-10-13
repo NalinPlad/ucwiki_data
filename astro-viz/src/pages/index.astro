@@ -1,11 +1,648 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="{Astro.generator}" />
+    <title>DCD Wikipedia embeddings</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      }
+      #container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+      }
+      #info {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 15px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="info">
+        <h2>DCD Wikipedia embeddings</h2>
+        <p>Drag to orbit • Scroll to zoom • Click to orbit around point</p>
+      </div>
+
+      <!-- Title display for hovered points -->
+      <div
+        id="title-display"
+        style="
+          position: absolute;
+          color: white;
+          background: rgba(0, 0, 0, 0.8);
+          padding: 8px 12px;
+          border-radius: 4px;
+          font-size: 14px;
+          pointer-events: none;
+          z-index: 200;
+          display: none;
+          max-width: 300px;
+          word-wrap: break-word;
+        "
+      ></div>
+
+      <!-- Search sidebar -->
+      <div
+        id="search-sidebar"
+        style="
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 300px;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.8);
+          backdrop-filter: blur(10px);
+          border-left: 1px solid rgba(255, 255, 255, 0.1);
+          padding: 20px;
+          box-sizing: border-box;
+          overflow-y: auto;
+          z-index: 150;
+        "
+      >
+        <h3 style="color: white; margin-top: 0; margin-bottom: 15px">
+          Search Articles
+        </h3>
+
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Type to search..."
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 14px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+          "
+        />
+
+        <div id="search-results" style="color: white; font-size: 12px"></div>
+      </div>
+    </div>
+
+    <script>
+      import * as THREE from "three";
+      import { OrbitControls } from "three-stdlib";
+
+      // Scene setup
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      const renderer = new THREE.WebGLRenderer({
+        antialias: true,
+      });
+
+      // Set up renderer
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setClearColor(0x222222);
+      document.getElementById("container").appendChild(renderer.domElement);
+
+      // Global label DOM and state for 3D-anchored tooltip
+      const titleDisplay = document.getElementById("title-display");
+      let isLabelVisible = false;
+      const currentLabelWorldPos = new THREE.Vector3();
+      let currentLabelText = "";
+
+      // Add OrbitControls for mouse interaction
+      const controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.05;
+      controls.enableZoom = true;
+      controls.enablePan = true;
+      controls.zoomSpeed = 0.3; // Slower zoom speed
+
+      //   // Add some ambient light for better visibility
+      //   const ambientLight = new THREE.AmbientLight(0x404040, 0.6);
+      //   scene.add(ambientLight);
+
+      //   // Add directional light
+      //   const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+      //   directionalLight.position.set(5, 5, 5);
+      //   scene.add(directionalLight);
+
+      // Add coordinate axes
+      const axesHelper = new THREE.AxesHelper(5);
+      scene.add(axesHelper);
+
+      // Function to load and visualize embeddings data
+      async function loadEmbeddingsData() {
+        try {
+          // Fetch the embeddings data
+          const response = await fetch("/data/embeddings.tsv");
+          const data = await response.text();
+
+          // Parse TSV data
+          const lines = data.trim().split("\n");
+          const headers = lines[0].split("\t");
+          const dataPoints = lines.slice(1).map((line) => {
+            const values = line.split("\t");
+            return {
+              u1: parseFloat(values[0]),
+              u2: parseFloat(values[1]),
+              u3: parseFloat(values[2]),
+              title: values[3],
+            };
+          });
+
+          console.log(`Loaded ${dataPoints.length} data points`);
+
+          // Calculate bounds for normalization
+          const bounds = {
+            minX: Math.min(...dataPoints.map((p) => p.u1)),
+            maxX: Math.max(...dataPoints.map((p) => p.u1)),
+            minY: Math.min(...dataPoints.map((p) => p.u2)),
+            maxY: Math.max(...dataPoints.map((p) => p.u2)),
+            minZ: Math.min(...dataPoints.map((p) => p.u3)),
+            maxZ: Math.max(...dataPoints.map((p) => p.u3)),
+          };
+
+          // Create points geometry for efficient rendering
+          const pointsGeometry = new THREE.BufferGeometry();
+          const positions = new Float32Array(dataPoints.length * 3);
+          const colors = new Float32Array(dataPoints.length * 3);
+          const sizes = new Float32Array(dataPoints.length);
+
+          // Normalize coordinates to [-10, 10] range
+          dataPoints.forEach((point, i) => {
+            const x =
+              ((point.u1 - bounds.minX) / (bounds.maxX - bounds.minX) - 0.5) *
+              20;
+            const y =
+              ((point.u2 - bounds.minY) / (bounds.maxY - bounds.minY) - 0.5) *
+              20;
+            const z =
+              ((point.u3 - bounds.minZ) / (bounds.maxZ - bounds.minZ) - 0.5) *
+              20;
+
+            positions[i * 3] = x;
+            positions[i * 3 + 1] = y;
+            positions[i * 3 + 2] = z;
+
+            // Default white color for all points
+            colors[i * 3] = 1;
+            colors[i * 3 + 1] = 1;
+            colors[i * 3 + 2] = 1;
+
+            // Default size
+            sizes[i] = 0.05;
+          });
+
+          pointsGeometry.setAttribute(
+            "position",
+            new THREE.BufferAttribute(positions, 3)
+          );
+          pointsGeometry.setAttribute(
+            "color",
+            new THREE.BufferAttribute(colors, 3)
+          );
+          pointsGeometry.setAttribute(
+            "size",
+            new THREE.BufferAttribute(sizes, 1)
+          );
+
+          // Create points material with distance-based transparency
+          const pointsMaterial = new THREE.PointsMaterial({
+            size: 0.05,
+            vertexColors: true,
+            transparent: true,
+            opacity: 0.8,
+            sizeAttenuation: true, // Makes points smaller when farther away
+          });
+
+          // Create points mesh
+          const points = new THREE.Points(pointsGeometry, pointsMaterial);
+          scene.add(points);
+
+          // Utility functions for color management
+          function setPointColor(index, r, g, b) {
+            const colors = points.geometry.attributes.color.array;
+            colors[index * 3] = r;
+            colors[index * 3 + 1] = g;
+            colors[index * 3 + 2] = b;
+          }
+
+          function setPointSize(index, size) {
+            const sizes = points.geometry.attributes.size.array;
+            sizes[index] = size;
+          }
+
+          function resetAllPointsToDefault() {
+            const colors = points.geometry.attributes.color.array;
+            const sizes = points.geometry.attributes.size.array;
+            for (let i = 0; i < dataPoints.length; i++) {
+              colors[i * 3] = 1;
+              colors[i * 3 + 1] = 1;
+              colors[i * 3 + 2] = 1;
+              sizes[i] = 0.05;
+            }
+            points.geometry.attributes.color.needsUpdate = true;
+            points.geometry.attributes.size.needsUpdate = true;
+          }
+
+          function highlightPoint(index) {
+            setPointColor(index, 1, 0.5, 0.5); // Pink/red highlight
+            setPointSize(index, 0.1); // Larger size
+            points.geometry.attributes.color.needsUpdate = true;
+            points.geometry.attributes.size.needsUpdate = true;
+          }
+
+          // Raycaster for hover detection
+          const raycaster = new THREE.Raycaster();
+          const mouse = new THREE.Vector2();
+          let hoveredIndex = -1;
+          let selectedPointIndex = -1;
+          let selectedPointPosition = null;
+
+          // Track mouse movement to distinguish between click and drag
+          let mouseDownPosition = null;
+          let isDragging = false;
+          const dragThreshold = 5; // pixels
+
+          // Get title display element
+          const titleDisplay = document.getElementById("title-display");
+
+          // Get search elements
+          const searchInput = document.getElementById("search-input");
+          const searchResults = document.getElementById("search-results");
+
+          // Search functionality
+          let filteredResults = [];
+          let currentSearchTerm = "";
+
+          // Label state for anchoring in 3D (already defined globally above)
+
+          // Helper: get world position for a given point index
+          function getWorldPositionForIndex(index) {
+            const posAttr = points.geometry.attributes.position;
+            return new THREE.Vector3(
+              posAttr.getX(index),
+              posAttr.getY(index),
+              posAttr.getZ(index)
+            );
+          }
+
+          // Function to show title anchored at a world position
+          function showTitleAtWorld(worldPos, title) {
+            currentLabelWorldPos.copy(worldPos);
+            currentLabelText = title;
+            isLabelVisible = true;
+          }
+
+          // Function to hide title
+          function hideTitle() {
+            isLabelVisible = false;
+            titleDisplay.style.display = "none";
+          }
+
+          // Function to orbit around selected point
+          function orbitAroundPoint(pointIndex) {
+            if (pointIndex >= 0 && pointIndex < dataPoints.length) {
+              const point = dataPoints[pointIndex];
+              const x =
+                ((point.u1 - bounds.minX) / (bounds.maxX - bounds.minX) - 0.5) *
+                20;
+              const y =
+                ((point.u2 - bounds.minY) / (bounds.maxY - bounds.minY) - 0.5) *
+                20;
+              const z =
+                ((point.u3 - bounds.minZ) / (bounds.maxZ - bounds.minZ) - 0.5) *
+                20;
+
+              selectedPointPosition = new THREE.Vector3(x, y, z);
+              controls.target.copy(selectedPointPosition);
+
+              // Zoom in closer to the selected point
+              camera.position.set(x, y, z + 5);
+              controls.update();
+
+              console.log(`Now orbiting around: ${point.title}`);
+            }
+          }
+
+          // Search functions
+          function filterResults(searchTerm) {
+            if (!searchTerm || searchTerm.length < 2) {
+              filteredResults = [];
+              return;
+            }
+
+            const term = searchTerm.toLowerCase();
+            filteredResults = dataPoints
+              .map((point, index) => ({
+                ...point,
+                index,
+              }))
+              .filter((point) => point.title.toLowerCase().includes(term))
+              .slice(0, 50); // Limit to 50 results for performance
+          }
+
+          function renderSearchResults() {
+            if (filteredResults.length === 0) {
+              if (currentSearchTerm.length >= 2) {
+                searchResults.innerHTML =
+                  '<div style="color: #888; padding: 10px;">No results found</div>';
+              } else {
+                searchResults.innerHTML =
+                  '<div style="color: #888; padding: 10px;">Type at least 2 characters to search</div>';
+              }
+              return;
+            }
+
+            const resultsHTML = filteredResults
+              .map(
+                (result) => `
+               <div 
+                 class="search-result-item" 
+                 data-index="${result.index}"
+                 style="
+                   padding: 8px 12px;
+                   margin: 2px 0;
+                   border-radius: 4px;
+                   cursor: pointer;
+                   transition: background-color 0.2s;
+                   border: 1px solid transparent;
+                 "
+                 onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)'"
+                 onmouseout="this.style.backgroundColor='transparent'"
+               >
+                 ${result.title}
+               </div>
+             `
+              )
+              .join("");
+
+            searchResults.innerHTML = resultsHTML;
+
+            // Add click handlers to result items
+            searchResults
+              .querySelectorAll(".search-result-item")
+              .forEach((item) => {
+                item.addEventListener("click", () => {
+                  const index = parseInt(item.dataset.index);
+
+                  // Highlight the selected point
+                  resetAllPointsToDefault();
+                  setPointColor(index, 0, 1, 0); // Green for selected
+                  setPointSize(index, 0.15); // Larger size
+                  points.geometry.attributes.color.needsUpdate = true;
+                  points.geometry.attributes.size.needsUpdate = true;
+
+                  // Orbit around the point
+                  selectedPointIndex = index;
+                  orbitAroundPoint(index);
+
+                  console.log(
+                    `Selected from search: ${dataPoints[index].title}`
+                  );
+                });
+
+                // Add hover effect to show title tooltip
+                item.addEventListener("mouseenter", (e) => {
+                  const index = parseInt(item.dataset.index);
+                  const point = dataPoints[index];
+
+                  // Highlight the point in 3D
+                  resetAllPointsToDefault();
+                  setPointColor(index, 1, 0.5, 0.5); // Pink highlight
+                  setPointSize(index, 0.1);
+                  points.geometry.attributes.color.needsUpdate = true;
+                  points.geometry.attributes.size.needsUpdate = true;
+
+                  // Show title anchored in 3D space for this point
+                  const worldPos = getWorldPositionForIndex(index);
+                  showTitleAtWorld(worldPos, point.title);
+                });
+
+                item.addEventListener("mouseleave", () => {
+                  // Reset highlights
+                  resetAllPointsToDefault();
+                  hideTitle();
+                });
+              });
+          }
+
+          // Search input handler
+          function handleSearchInput(event) {
+            currentSearchTerm = event.target.value;
+            filterResults(currentSearchTerm);
+            renderSearchResults();
+          }
+
+          // Mouse move handler for hover detection
+          function onMouseMove(event) {
+            // Check if we're dragging
+            if (mouseDownPosition) {
+              const deltaX = event.clientX - mouseDownPosition.x;
+              const deltaY = event.clientY - mouseDownPosition.y;
+              const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+
+              if (distance > dragThreshold) {
+                isDragging = true;
+              }
+            }
+
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+            raycaster.setFromCamera(mouse, camera);
+
+            // Use a larger threshold for better selection
+            raycaster.params.Points.threshold = 0.1;
+
+            const intersects = raycaster.intersectObject(points);
+
+            if (intersects.length > 0) {
+              const intersect = intersects[0];
+              const index = intersect.index;
+
+              if (index !== hoveredIndex) {
+                // Reset previous highlight
+                if (hoveredIndex !== -1) {
+                  resetAllPointsToDefault();
+                }
+
+                hoveredIndex = index;
+                console.log("Hovered:", dataPoints[index].title);
+
+                // Highlight current point
+                highlightPoint(index);
+
+                // Show title anchored in 3D at the point position
+                const worldPos = getWorldPositionForIndex(index);
+                showTitleAtWorld(worldPos, dataPoints[index].title);
+              }
+            } else {
+              if (hoveredIndex !== -1) {
+                hoveredIndex = -1;
+                resetAllPointsToDefault();
+                hideTitle();
+              }
+            }
+          }
+
+          // Mouse down handler to track drag start
+          function onMouseDown(event) {
+            mouseDownPosition = {
+              x: event.clientX,
+              y: event.clientY,
+            };
+            isDragging = false;
+          }
+
+          // Mouse up handler to detect click vs drag
+          function onMouseUp(event) {
+            if (mouseDownPosition && !isDragging) {
+              // This was a click, not a drag
+              handlePointClick(event);
+            }
+            mouseDownPosition = null;
+            isDragging = false;
+          }
+
+          // Click handler for orbit around point
+          function handlePointClick(event) {
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+            raycaster.setFromCamera(mouse, camera);
+
+            raycaster.params.Points.threshold = 0.1;
+
+            const intersects = raycaster.intersectObject(points);
+
+            if (intersects.length > 0) {
+              const intersect = intersects[0];
+              const index = intersect.index;
+
+              selectedPointIndex = index;
+              orbitAroundPoint(index);
+
+              // Highlight the selected point differently
+              resetAllPointsToDefault();
+              setPointColor(index, 0, 1, 0); // Green for selected
+              setPointSize(index, 0.15); // Even larger for selected
+              points.geometry.attributes.color.needsUpdate = true;
+              points.geometry.attributes.size.needsUpdate = true;
+            }
+          }
+
+          window.addEventListener("mousemove", onMouseMove);
+
+          window.addEventListener("mousedown", onMouseDown);
+
+          window.addEventListener("mouseup", onMouseUp);
+
+          // Update info panel
+          const infoElement = document.querySelector("#info");
+          infoElement.innerHTML = `
+             <h2>DCD Wikipedia Embeddings</h2>
+             <p>${dataPoints.length} data points loaded</p>
+             <p>Hover over points to see titles</p>
+             <p>Drag to orbit • Scroll to zoom</p>
+           `;
+
+          // Initialize search
+          searchInput.addEventListener("input", handleSearchInput);
+          renderSearchResults(); // Show initial message
+
+          // Position camera to view the data
+          camera.position.set(0, 0, 30);
+          controls.target.set(0, 0, 0);
+        } catch (error) {
+          console.error("Error loading embeddings data:", error);
+          // Fallback to the three test spheres
+          createTestSpheres();
+        }
+      }
+
+      // Fallback function to create test spheres
+      function createTestSpheres() {
+        const sphereGeometry = new THREE.SphereGeometry(0.3, 32, 32);
+
+        // Red sphere at (1, 0, 0)
+        const redMaterial = new THREE.MeshBasicMaterial({
+          color: 0xff0000,
+        });
+        const redSphere = new THREE.Mesh(sphereGeometry, redMaterial);
+        redSphere.position.set(1, 0, 0);
+        scene.add(redSphere);
+
+        // Green sphere at (0, 1, 1)
+        const greenMaterial = new THREE.MeshBasicMaterial({
+          color: 0x00ff00,
+        });
+        const greenSphere = new THREE.Mesh(sphereGeometry, greenMaterial);
+        greenSphere.position.set(0, 1, 1);
+        scene.add(greenSphere);
+
+        // Blue sphere at (2, 3, 0)
+        const blueMaterial = new THREE.MeshBasicMaterial({
+          color: 0x0000ff,
+        });
+        const blueSphere = new THREE.Mesh(sphereGeometry, blueMaterial);
+        blueSphere.position.set(2, 3, 0);
+        scene.add(blueSphere);
+
+        // Position camera
+        camera.position.set(5, 5, 5);
+        controls.target.set(1, 1, 0);
+      }
+
+      // Animation loop
+      function animate() {
+        requestAnimationFrame(animate);
+        controls.update();
+        // If label is visible, project its world position to screen and place the DOM element
+        if (isLabelVisible) {
+          const projected = currentLabelWorldPos.clone().project(camera);
+          const halfWidth = window.innerWidth / 2;
+          const halfHeight = window.innerHeight / 2;
+          const screenX = projected.x * halfWidth + halfWidth;
+          const screenY = -projected.y * halfHeight + halfHeight;
+          titleDisplay.textContent = currentLabelText;
+          titleDisplay.style.display = "block";
+          titleDisplay.style.left = `${screenX + 10}px`;
+          titleDisplay.style.top = `${screenY - 25}px`;
+        }
+        renderer.render(scene, camera);
+      }
+
+      // Handle window resize
+      window.addEventListener("resize", () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+
+      // Load data and start animation
+      loadEmbeddingsData().then(() => {
+        animate();
+      });
+    </script>
+  </body>
+</html>

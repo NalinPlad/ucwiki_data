@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.14.1"
+    "@types/three": "^0.180.0",
+    "astro": "^5.14.1",
+    "three": "^0.180.0",
+    "three-stdlib": "^2.36.0"
   }
 }
