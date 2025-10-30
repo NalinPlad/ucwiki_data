@@ -107,13 +107,13 @@ const IP_PREFIX = {
     //     "169.233."
     // ]
 
-    // UCOP_Main: [
-    //     ""
-    // ]
-
-    DHS_Main: [
-      
+    UCOP_Main: [
+        "128.48."
     ]
+
+    // DHS_Main: [
+      
+    // ]
 
 
 
