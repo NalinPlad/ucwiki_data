@@ -1,0 +1,1177 @@
+[
+  {
+    "year": 2001,
+    "UCLA": {
+      "edit_count": 7212,
+      "edit_volume": 0
+    },
+    "UCB": {
+      "edit_count": 276167,
+      "edit_volume": 0
+    },
+    "UCSC": {
+      "edit_count": 1310,
+      "edit_volume": 0
+    },
+    "UCSD": {
+      "edit_count": 30,
+      "edit_volume": 0
+    },
+    "UCR": {
+      "edit_count": 0,
+      "edit_volume": 0
+    },
+    "UCI": {
+      "edit_count": 62024,
+      "edit_volume": 0
+    },
+    "UCD": {
+      "edit_count": 0,
+      "edit_volume": 0
+    },
+    "UCSB": {
+      "edit_count": 6724,
+      "edit_volume": 0
+    },
+    "UCSF": {
+      "edit_count": 0,
+      "edit_volume": 0
+    },
+    "UCOP": {
+      "edit_count": 0,
+      "edit_volume": 0
+    },
+    "UCM": {
+      "edit_count": 0,
+      "edit_volume": 0
+    }
+  },
+  {
+    "year": 2002,
+    "UCLA": {
+      "edit_count": 24756,
+      "edit_volume": 5
+    },
+    "UCB": {
+      "edit_count": 2304735,
+      "edit_volume": 80
+    },
+    "UCSC": {
+      "edit_count": 190959,
+      "edit_volume": 1
+    },
+    "UCSD": {
+      "edit_count": 651449,
+      "edit_volume": 1
+    },
+    "UCR": {
+      "edit_count": 407909,
+      "edit_volume": 0
+    },
+    "UCI": {
+      "edit_count": 73124,
+      "edit_volume": 9
+    },
+    "UCD": {
+      "edit_count": 45541,
+      "edit_volume": 0
+    },
+    "UCSB": {
+      "edit_count": 27009,
+      "edit_volume": 2
+    },
+    "UCSF": {
+      "edit_count": 0,
+      "edit_volume": 0
+    },
+    "UCOP": {
+      "edit_count": 0,
+      "edit_volume": 0
+    },
+    "UCM": {
+      "edit_count": 0,
+      "edit_volume": 0
+    }
+  },
+  {
+    "year": 2003,
+    "UCLA": {
+      "edit_count": 534739,
+      "edit_volume": 12
+    },
+    "UCB": {
+      "edit_count": 3875553,
+      "edit_volume": 385
+    },
+    "UCSC": {
+      "edit_count": 361024,
+      "edit_volume": 119
+    },
+    "UCSD": {
+      "edit_count": 702606,
+      "edit_volume": 171
+    },
+    "UCR": {
+      "edit_count": 457254,
+      "edit_volume": 109
+    },
+    "UCI": {
+      "edit_count": 1540193,
+      "edit_volume": 16
+    },
+    "UCD": {
+      "edit_count": 240484,
+      "edit_volume": 9
+    },
+    "UCSB": {
+      "edit_count": 808047,
+      "edit_volume": 23
+    },
+    "UCSF": {
+      "edit_count": 19506,
+      "edit_volume": 0
+    },
+    "UCOP": {
+      "edit_count": 0,
+      "edit_volume": 0
+    },
+    "UCM": {
+      "edit_count": 0,
+      "edit_volume": 0
+    }
+  },
+  {
+    "year": 2004,
+    "UCLA": {
+      "edit_count": 4321547,
+      "edit_volume": 102
+    },
+    "UCB": {
+      "edit_count": 9775823,
+      "edit_volume": 729
+    },
+    "UCSC": {
+      "edit_count": 3669181,
+      "edit_volume": 147
+    },
+    "UCSD": {
+      "edit_count": 2892285,
+      "edit_volume": 189
+    },
+    "UCR": {
+      "edit_count": 2070965,
+      "edit_volume": 139
+    },
+    "UCI": {
+      "edit_count": 3980606,
+      "edit_volume": 225
+    },
+    "UCD": {
+      "edit_count": 4271663,
+      "edit_volume": 68
+    },
+    "UCSB": {
+      "edit_count": 4748646,
+      "edit_volume": 129
+    },
+    "UCSF": {
+      "edit_count": 1504956,
+      "edit_volume": 8
+    },
+    "UCOP": {
+      "edit_count": 38913,
+      "edit_volume": 0
+    },
+    "UCM": {
+      "edit_count": 71855,
+      "edit_volume": 0
+    }
+  },
+  {
+    "year": 2005,
+    "UCLA": {
+      "edit_count": 33215755,
+      "edit_volume": 570
+    },
+    "UCB": {
+      "edit_count": 45411113,
+      "edit_volume": 1400
+    },
+    "UCSC": {
+      "edit_count": 15299935,
+      "edit_volume": 391
+    },
+    "UCSD": {
+      "edit_count": 27003837,
+      "edit_volume": 541
+    },
+    "UCR": {
+      "edit_count": 10057803,
+      "edit_volume": 339
+    },
+    "UCI": {
+      "edit_count": 27813934,
+      "edit_volume": 494
+    },
+    "UCD": {
+      "edit_count": 17093438,
+      "edit_volume": 574
+    },
+    "UCSB": {
+      "edit_count": 21014169,
+      "edit_volume": 573
+    },
+    "UCSF": {
+      "edit_count": 6501522,
+      "edit_volume": 181
+    },
+    "UCOP": {
+      "edit_count": 363251,
+      "edit_volume": 21
+    },
+    "UCM": {
+      "edit_count": 4068138,
+      "edit_volume": 2
+    }
+  },
+  {
+    "year": 2006,
+    "UCLA": {
+      "edit_count": 133248550,
+      "edit_volume": 2908
+    },
+    "UCB": {
+      "edit_count": 128708279,
+      "edit_volume": 4673
+    },
+    "UCSC": {
+      "edit_count": 55386587,
+      "edit_volume": 1395
+    },
+    "UCSD": {
+      "edit_count": 96562752,
+      "edit_volume": 2534
+    },
+    "UCR": {
+      "edit_count": 37380227,
+      "edit_volume": 1008
+    },
+    "UCI": {
+      "edit_count": 84264350,
+      "edit_volume": 2001
+    },
+    "UCD": {
+      "edit_count": 60592422,
+      "edit_volume": 1685
+    },
+    "UCSB": {
+      "edit_count": 88645445,
+      "edit_volume": 1817
+    },
+    "UCSF": {
+      "edit_count": 15929764,
+      "edit_volume": 672
+    },
+    "UCOP": {
+      "edit_count": 1127395,
+      "edit_volume": 40
+    },
+    "UCM": {
+      "edit_count": 6784848,
+      "edit_volume": 75
+    }
+  },
+  {
+    "year": 2007,
+    "UCLA": {
+      "edit_count": 332838439,
+      "edit_volume": 8275
+    },
+    "UCB": {
+      "edit_count": 217779359,
+      "edit_volume": 10021
+    },
+    "UCSC": {
+      "edit_count": 92754944,
+      "edit_volume": 3883
+    },
+    "UCSD": {
+      "edit_count": 166512897,
+      "edit_volume": 6900
+    },
+    "UCR": {
+      "edit_count": 82824955,
+      "edit_volume": 2424
+    },
+    "UCI": {
+      "edit_count": 139659142,
+      "edit_volume": 5169
+    },
+    "UCD": {
+      "edit_count": 103463254,
+      "edit_volume": 4838
+    },
+    "UCSB": {
+      "edit_count": 167889481,
+      "edit_volume": 5280
+    },
+    "UCSF": {
+      "edit_count": 40164696,
+      "edit_volume": 1431
+    },
+    "UCOP": {
+      "edit_count": 1671778,
+      "edit_volume": 102
+    },
+    "UCM": {
+      "edit_count": 10827345,
+      "edit_volume": 265
+    }
+  },
+  {
+    "year": 2008,
+    "UCLA": {
+      "edit_count": 426475922,
+      "edit_volume": 15618
+    },
+    "UCB": {
+      "edit_count": 298817691,
+      "edit_volume": 15060
+    },
+    "UCSC": {
+      "edit_count": 134250569,
+      "edit_volume": 6235
+    },
+    "UCSD": {
+      "edit_count": 223702598,
+      "edit_volume": 11167
+    },
+    "UCR": {
+      "edit_count": 118229971,
+      "edit_volume": 4677
+    },
+    "UCI": {
+      "edit_count": 183106307,
+      "edit_volume": 8165
+    },
+    "UCD": {
+      "edit_count": 149178349,
+      "edit_volume": 7503
+    },
+    "UCSB": {
+      "edit_count": 211157369,
+      "edit_volume": 8715
+    },
+    "UCSF": {
+      "edit_count": 58438557,
+      "edit_volume": 2408
+    },
+    "UCOP": {
+      "edit_count": 1895578,
+      "edit_volume": 135
+    },
+    "UCM": {
+      "edit_count": 14686630,
+      "edit_volume": 492
+    }
+  },
+  {
+    "year": 2009,
+    "UCLA": {
+      "edit_count": 494756693,
+      "edit_volume": 20727
+    },
+    "UCB": {
+      "edit_count": 376232824,
+      "edit_volume": 19497
+    },
+    "UCSC": {
+      "edit_count": 181373045,
+      "edit_volume": 8488
+    },
+    "UCSD": {
+      "edit_count": 276902744,
+      "edit_volume": 14186
+    },
+    "UCR": {
+      "edit_count": 127111707,
+      "edit_volume": 6341
+    },
+    "UCI": {
+      "edit_count": 233852015,
+      "edit_volume": 10524
+    },
+    "UCD": {
+      "edit_count": 180819532,
+      "edit_volume": 9864
+    },
+    "UCSB": {
+      "edit_count": 243548549,
+      "edit_volume": 11049
+    },
+    "UCSF": {
+      "edit_count": 72447492,
+      "edit_volume": 3153
+    },
+    "UCOP": {
+      "edit_count": 2062062,
+      "edit_volume": 150
+    },
+    "UCM": {
+      "edit_count": 19636971,
+      "edit_volume": 737
+    }
+  },
+  {
+    "year": 2010,
+    "UCLA": {
+      "edit_count": 565276399,
+      "edit_volume": 24190
+    },
+    "UCB": {
+      "edit_count": 436056274,
+      "edit_volume": 23138
+    },
+    "UCSC": {
+      "edit_count": 219113868,
+      "edit_volume": 11074
+    },
+    "UCSD": {
+      "edit_count": 321866008,
+      "edit_volume": 16856
+    },
+    "UCR": {
+      "edit_count": 135798723,
+      "edit_volume": 6864
+    },
+    "UCI": {
+      "edit_count": 271775174,
+      "edit_volume": 13203
+    },
+    "UCD": {
+      "edit_count": 206291193,
+      "edit_volume": 11449
+    },
+    "UCSB": {
+      "edit_count": 271830794,
+      "edit_volume": 12743
+    },
+    "UCSF": {
+      "edit_count": 84562871,
+      "edit_volume": 3909
+    },
+    "UCOP": {
+      "edit_count": 2330471,
+      "edit_volume": 166
+    },
+    "UCM": {
+      "edit_count": 22188216,
+      "edit_volume": 942
+    }
+  },
+  {
+    "year": 2011,
+    "UCLA": {
+      "edit_count": 622289268,
+      "edit_volume": 27444
+    },
+    "UCB": {
+      "edit_count": 486771741,
+      "edit_volume": 26003
+    },
+    "UCSC": {
+      "edit_count": 247905127,
+      "edit_volume": 12786
+    },
+    "UCSD": {
+      "edit_count": 355840450,
+      "edit_volume": 19117
+    },
+    "UCR": {
+      "edit_count": 140525564,
+      "edit_volume": 7296
+    },
+    "UCI": {
+      "edit_count": 302644993,
+      "edit_volume": 15046
+    },
+    "UCD": {
+      "edit_count": 229023130,
+      "edit_volume": 12665
+    },
+    "UCSB": {
+      "edit_count": 299571229,
+      "edit_volume": 14515
+    },
+    "UCSF": {
+      "edit_count": 97185619,
+      "edit_volume": 4581
+    },
+    "UCOP": {
+      "edit_count": 5401613,
+      "edit_volume": 182
+    },
+    "UCM": {
+      "edit_count": 24679543,
+      "edit_volume": 1082
+    }
+  },
+  {
+    "year": 2012,
+    "UCLA": {
+      "edit_count": 680897562,
+      "edit_volume": 29799
+    },
+    "UCB": {
+      "edit_count": 528954029,
+      "edit_volume": 28422
+    },
+    "UCSC": {
+      "edit_count": 272852310,
+      "edit_volume": 14150
+    },
+    "UCSD": {
+      "edit_count": 393245942,
+      "edit_volume": 20762
+    },
+    "UCR": {
+      "edit_count": 148758235,
+      "edit_volume": 7555
+    },
+    "UCI": {
+      "edit_count": 330637286,
+      "edit_volume": 16509
+    },
+    "UCD": {
+      "edit_count": 251325262,
+      "edit_volume": 13822
+    },
+    "UCSB": {
+      "edit_count": 323685833,
+      "edit_volume": 16029
+    },
+    "UCSF": {
+      "edit_count": 100879311,
+      "edit_volume": 5129
+    },
+    "UCOP": {
+      "edit_count": 5689565,
+      "edit_volume": 293
+    },
+    "UCM": {
+      "edit_count": 27198395,
+      "edit_volume": 1192
+    }
+  },
+  {
+    "year": 2013,
+    "UCLA": {
+      "edit_count": 738493516,
+      "edit_volume": 31954
+    },
+    "UCB": {
+      "edit_count": 569581483,
+      "edit_volume": 30354
+    },
+    "UCSC": {
+      "edit_count": 285905612,
+      "edit_volume": 15153
+    },
+    "UCSD": {
+      "edit_count": 425816729,
+      "edit_volume": 22263
+    },
+    "UCR": {
+      "edit_count": 154618593,
+      "edit_volume": 7856
+    },
+    "UCI": {
+      "edit_count": 354655997,
+      "edit_volume": 18104
+    },
+    "UCD": {
+      "edit_count": 267019487,
+      "edit_volume": 14750
+    },
+    "UCSB": {
+      "edit_count": 361434677,
+      "edit_volume": 17380
+    },
+    "UCSF": {
+      "edit_count": 105275403,
+      "edit_volume": 5339
+    },
+    "UCOP": {
+      "edit_count": 5815094,
+      "edit_volume": 322
+    },
+    "UCM": {
+      "edit_count": 29736185,
+      "edit_volume": 1289
+    }
+  },
+  {
+    "year": 2014,
+    "UCLA": {
+      "edit_count": 803454500,
+      "edit_volume": 34033
+    },
+    "UCB": {
+      "edit_count": 614329810,
+      "edit_volume": 32298
+    },
+    "UCSC": {
+      "edit_count": 298097556,
+      "edit_volume": 15892
+    },
+    "UCSD": {
+      "edit_count": 449302441,
+      "edit_volume": 23524
+    },
+    "UCR": {
+      "edit_count": 157631107,
+      "edit_volume": 8154
+    },
+    "UCI": {
+      "edit_count": 371411549,
+      "edit_volume": 19134
+    },
+    "UCD": {
+      "edit_count": 291141463,
+      "edit_volume": 15390
+    },
+    "UCSB": {
+      "edit_count": 430051782,
+      "edit_volume": 19237
+    },
+    "UCSF": {
+      "edit_count": 109710576,
+      "edit_volume": 5557
+    },
+    "UCOP": {
+      "edit_count": 6450036,
+      "edit_volume": 330
+    },
+    "UCM": {
+      "edit_count": 33847766,
+      "edit_volume": 1381
+    }
+  },
+  {
+    "year": 2015,
+    "UCLA": {
+      "edit_count": 862068333,
+      "edit_volume": 36327
+    },
+    "UCB": {
+      "edit_count": 643928899,
+      "edit_volume": 34537
+    },
+    "UCSC": {
+      "edit_count": 310812611,
+      "edit_volume": 16362
+    },
+    "UCSD": {
+      "edit_count": 476500887,
+      "edit_volume": 24529
+    },
+    "UCR": {
+      "edit_count": 160098649,
+      "edit_volume": 8341
+    },
+    "UCI": {
+      "edit_count": 386498416,
+      "edit_volume": 19838
+    },
+    "UCD": {
+      "edit_count": 313070429,
+      "edit_volume": 17113
+    },
+    "UCSB": {
+      "edit_count": 489781089,
+      "edit_volume": 21042
+    },
+    "UCSF": {
+      "edit_count": 118495744,
+      "edit_volume": 5746
+    },
+    "UCOP": {
+      "edit_count": 7366703,
+      "edit_volume": 357
+    },
+    "UCM": {
+      "edit_count": 35456676,
+      "edit_volume": 1503
+    }
+  },
+  {
+    "year": 2016,
+    "UCLA": {
+      "edit_count": 932863211,
+      "edit_volume": 38334
+    },
+    "UCB": {
+      "edit_count": 672865577,
+      "edit_volume": 35815
+    },
+    "UCSC": {
+      "edit_count": 322839164,
+      "edit_volume": 16831
+    },
+    "UCSD": {
+      "edit_count": 501056429,
+      "edit_volume": 25439
+    },
+    "UCR": {
+      "edit_count": 163498658,
+      "edit_volume": 8467
+    },
+    "UCI": {
+      "edit_count": 398234685,
+      "edit_volume": 20383
+    },
+    "UCD": {
+      "edit_count": 329700538,
+      "edit_volume": 18797
+    },
+    "UCSB": {
+      "edit_count": 518499522,
+      "edit_volume": 22882
+    },
+    "UCSF": {
+      "edit_count": 123730576,
+      "edit_volume": 6092
+    },
+    "UCOP": {
+      "edit_count": 8263974,
+      "edit_volume": 385
+    },
+    "UCM": {
+      "edit_count": 36906424,
+      "edit_volume": 1561
+    }
+  },
+  {
+    "year": 2017,
+    "UCLA": {
+      "edit_count": 987135602,
+      "edit_volume": 42408
+    },
+    "UCB": {
+      "edit_count": 701372827,
+      "edit_volume": 36882
+    },
+    "UCSC": {
+      "edit_count": 333624524,
+      "edit_volume": 17291
+    },
+    "UCSD": {
+      "edit_count": 519388874,
+      "edit_volume": 26317
+    },
+    "UCR": {
+      "edit_count": 165877364,
+      "edit_volume": 8603
+    },
+    "UCI": {
+      "edit_count": 414626430,
+      "edit_volume": 20862
+    },
+    "UCD": {
+      "edit_count": 351169718,
+      "edit_volume": 19441
+    },
+    "UCSB": {
+      "edit_count": 530218807,
+      "edit_volume": 23777
+    },
+    "UCSF": {
+      "edit_count": 131408961,
+      "edit_volume": 6278
+    },
+    "UCOP": {
+      "edit_count": 8492386,
+      "edit_volume": 435
+    },
+    "UCM": {
+      "edit_count": 37973016,
+      "edit_volume": 1609
+    }
+  },
+  {
+    "year": 2018,
+    "UCLA": {
+      "edit_count": 1025059484,
+      "edit_volume": 44735
+    },
+    "UCB": {
+      "edit_count": 723632687,
+      "edit_volume": 37823
+    },
+    "UCSC": {
+      "edit_count": 354685599,
+      "edit_volume": 17667
+    },
+    "UCSD": {
+      "edit_count": 541564787,
+      "edit_volume": 26997
+    },
+    "UCR": {
+      "edit_count": 167760381,
+      "edit_volume": 8737
+    },
+    "UCI": {
+      "edit_count": 448398397,
+      "edit_volume": 21493
+    },
+    "UCD": {
+      "edit_count": 365667923,
+      "edit_volume": 20244
+    },
+    "UCSB": {
+      "edit_count": 541336775,
+      "edit_volume": 24292
+    },
+    "UCSF": {
+      "edit_count": 142662879,
+      "edit_volume": 6563
+    },
+    "UCOP": {
+      "edit_count": 8559858,
+      "edit_volume": 444
+    },
+    "UCM": {
+      "edit_count": 39675441,
+      "edit_volume": 1656
+    }
+  },
+  {
+    "year": 2019,
+    "UCLA": {
+      "edit_count": 1056547881,
+      "edit_volume": 46073
+    },
+    "UCB": {
+      "edit_count": 745771915,
+      "edit_volume": 38653
+    },
+    "UCSC": {
+      "edit_count": 384807261,
+      "edit_volume": 18300
+    },
+    "UCSD": {
+      "edit_count": 565091872,
+      "edit_volume": 27896
+    },
+    "UCR": {
+      "edit_count": 169414860,
+      "edit_volume": 8809
+    },
+    "UCI": {
+      "edit_count": 478137568,
+      "edit_volume": 22422
+    },
+    "UCD": {
+      "edit_count": 376088733,
+      "edit_volume": 20642
+    },
+    "UCSB": {
+      "edit_count": 551370543,
+      "edit_volume": 24796
+    },
+    "UCSF": {
+      "edit_count": 146808452,
+      "edit_volume": 6899
+    },
+    "UCOP": {
+      "edit_count": 8665302,
+      "edit_volume": 452
+    },
+    "UCM": {
+      "edit_count": 40894617,
+      "edit_volume": 1717
+    }
+  },
+  {
+    "year": 2020,
+    "UCLA": {
+      "edit_count": 1071041126,
+      "edit_volume": 47177
+    },
+    "UCB": {
+      "edit_count": 751816113,
+      "edit_volume": 39385
+    },
+    "UCSC": {
+      "edit_count": 393532585,
+      "edit_volume": 19091
+    },
+    "UCSD": {
+      "edit_count": 570289973,
+      "edit_volume": 28681
+    },
+    "UCR": {
+      "edit_count": 170117806,
+      "edit_volume": 8875
+    },
+    "UCI": {
+      "edit_count": 514438678,
+      "edit_volume": 23179
+    },
+    "UCD": {
+      "edit_count": 382461322,
+      "edit_volume": 21013
+    },
+    "UCSB": {
+      "edit_count": 558071751,
+      "edit_volume": 25209
+    },
+    "UCSF": {
+      "edit_count": 149123695,
+      "edit_volume": 7084
+    },
+    "UCOP": {
+      "edit_count": 8840596,
+      "edit_volume": 458
+    },
+    "UCM": {
+      "edit_count": 41178345,
+      "edit_volume": 1768
+    }
+  },
+  {
+    "year": 2021,
+    "UCLA": {
+      "edit_count": 1081094794,
+      "edit_volume": 47631
+    },
+    "UCB": {
+      "edit_count": 758872073,
+      "edit_volume": 39636
+    },
+    "UCSC": {
+      "edit_count": 400711954,
+      "edit_volume": 19346
+    },
+    "UCSD": {
+      "edit_count": 578806378,
+      "edit_volume": 28911
+    },
+    "UCR": {
+      "edit_count": 170980410,
+      "edit_volume": 8903
+    },
+    "UCI": {
+      "edit_count": 530965708,
+      "edit_volume": 23946
+    },
+    "UCD": {
+      "edit_count": 390734151,
+      "edit_volume": 21245
+    },
+    "UCSB": {
+      "edit_count": 562085362,
+      "edit_volume": 25405
+    },
+    "UCSF": {
+      "edit_count": 152832148,
+      "edit_volume": 7206
+    },
+    "UCOP": {
+      "edit_count": 8847158,
+      "edit_volume": 468
+    },
+    "UCM": {
+      "edit_count": 42089265,
+      "edit_volume": 1777
+    }
+  },
+  {
+    "year": 2022,
+    "UCLA": {
+      "edit_count": 1116252600,
+      "edit_volume": 47961
+    },
+    "UCB": {
+      "edit_count": 770819944,
+      "edit_volume": 39899
+    },
+    "UCSC": {
+      "edit_count": 416882163,
+      "edit_volume": 19585
+    },
+    "UCSD": {
+      "edit_count": 587011879,
+      "edit_volume": 29219
+    },
+    "UCR": {
+      "edit_count": 172534208,
+      "edit_volume": 8952
+    },
+    "UCI": {
+      "edit_count": 544324726,
+      "edit_volume": 24356
+    },
+    "UCD": {
+      "edit_count": 397815873,
+      "edit_volume": 21487
+    },
+    "UCSB": {
+      "edit_count": 570780307,
+      "edit_volume": 25583
+    },
+    "UCSF": {
+      "edit_count": 155584697,
+      "edit_volume": 7339
+    },
+    "UCOP": {
+      "edit_count": 8852139,
+      "edit_volume": 469
+    },
+    "UCM": {
+      "edit_count": 43693010,
+      "edit_volume": 1806
+    }
+  },
+  {
+    "year": 2023,
+    "UCLA": {
+      "edit_count": 1203696013,
+      "edit_volume": 48779
+    },
+    "UCB": {
+      "edit_count": 785561033,
+      "edit_volume": 40266
+    },
+    "UCSC": {
+      "edit_count": 422213092,
+      "edit_volume": 20023
+    },
+    "UCSD": {
+      "edit_count": 618655843,
+      "edit_volume": 29506
+    },
+    "UCR": {
+      "edit_count": 173694213,
+      "edit_volume": 9039
+    },
+    "UCI": {
+      "edit_count": 554504633,
+      "edit_volume": 24653
+    },
+    "UCD": {
+      "edit_count": 404457008,
+      "edit_volume": 21697
+    },
+    "UCSB": {
+      "edit_count": 579037283,
+      "edit_volume": 25809
+    },
+    "UCSF": {
+      "edit_count": 158208065,
+      "edit_volume": 7458
+    },
+    "UCOP": {
+      "edit_count": 8852139,
+      "edit_volume": 470
+    },
+    "UCM": {
+      "edit_count": 66035735,
+      "edit_volume": 1873
+    }
+  },
+  {
+    "year": 2024,
+    "UCLA": {
+      "edit_count": 1294329809,
+      "edit_volume": 50982
+    },
+    "UCB": {
+      "edit_count": 805038160,
+      "edit_volume": 40714
+    },
+    "UCSC": {
+      "edit_count": 431675026,
+      "edit_volume": 20212
+    },
+    "UCSD": {
+      "edit_count": 637205674,
+      "edit_volume": 30350
+    },
+    "UCR": {
+      "edit_count": 174034460,
+      "edit_volume": 9094
+    },
+    "UCI": {
+      "edit_count": 565082285,
+      "edit_volume": 24929
+    },
+    "UCD": {
+      "edit_count": 409829249,
+      "edit_volume": 21901
+    },
+    "UCSB": {
+      "edit_count": 586514362,
+      "edit_volume": 26071
+    },
+    "UCSF": {
+      "edit_count": 160431080,
+      "edit_volume": 7545
+    },
+    "UCOP": {
+      "edit_count": 8941472,
+      "edit_volume": 470
+    },
+    "UCM": {
+      "edit_count": 69532936,
+      "edit_volume": 2054
+    }
+  },
+  {
+    "year": 2025,
+    "UCLA": {
+      "edit_count": 1319042684,
+      "edit_volume": 53516
+    },
+    "UCB": {
+      "edit_count": 819494538,
+      "edit_volume": 41280
+    },
+    "UCSC": {
+      "edit_count": 434389826,
+      "edit_volume": 20440
+    },
+    "UCSD": {
+      "edit_count": 689603573,
+      "edit_volume": 30767
+    },
+    "UCR": {
+      "edit_count": 174454159,
+      "edit_volume": 9121
+    },
+    "UCI": {
+      "edit_count": 574256826,
+      "edit_volume": 25206
+    },
+    "UCD": {
+      "edit_count": 414888930,
+      "edit_volume": 22086
+    },
+    "UCSB": {
+      "edit_count": 594231726,
+      "edit_volume": 26336
+    },
+    "UCSF": {
+      "edit_count": 161952452,
+      "edit_volume": 7617
+    },
+    "UCOP": {
+      "edit_count": 8975612,
+      "edit_volume": 476
+    },
+    "UCM": {
+      "edit_count": 71044954,
+      "edit_volume": 2103
+    }
+  }
+]

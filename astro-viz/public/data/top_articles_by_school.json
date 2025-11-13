@@ -1,0 +1,849 @@
+{
+  "UCB": [
+    {
+      "title": "University of California, Berkeley",
+      "total_volume": 17822916,
+      "unique_editors": 135
+    },
+    {
+      "title": "Friedrich Nietzsche",
+      "total_volume": 4347661,
+      "unique_editors": 6
+    },
+    {
+      "title": "Stanford University",
+      "total_volume": 4302058,
+      "unique_editors": 40
+    },
+    {
+      "title": "Late Pleistocene extinctions",
+      "total_volume": 4062424,
+      "unique_editors": 3
+    },
+    {
+      "title": "Wikipedia:Reference desk/Science",
+      "total_volume": 3921461,
+      "unique_editors": 8
+    },
+    {
+      "title": "List of people associated with the London School of Economics",
+      "total_volume": 3036890,
+      "unique_editors": 12
+    },
+    {
+      "title": "Shamanism",
+      "total_volume": 2808390,
+      "unique_editors": 2
+    },
+    {
+      "title": "List of Nobel laureates by university affiliation",
+      "total_volume": 2502950,
+      "unique_editors": 8
+    },
+    {
+      "title": "Talk:Trinity",
+      "total_volume": 2500259,
+      "unique_editors": 3
+    },
+    {
+      "title": "List of University of California, Berkeley alumni",
+      "total_volume": 2273970,
+      "unique_editors": 20
+    },
+    {
+      "title": "Kalman filter",
+      "total_volume": 2207088,
+      "unique_editors": 2
+    },
+    {
+      "title": "Wikipedia:Sandbox/Archive2",
+      "total_volume": 2020041,
+      "unique_editors": 1
+    },
+    {
+      "title": "Big Three (tennis)",
+      "total_volume": 1880654,
+      "unique_editors": 7
+    },
+    {
+      "title": "Talk:Nagual",
+      "total_volume": 1716991,
+      "unique_editors": 4
+    },
+    {
+      "title": "List of Wizards of Waverly Place episodes",
+      "total_volume": 1660876,
+      "unique_editors": 1
+    }
+  ],
+  "UCD": [
+    {
+      "title": "University of California, Davis",
+      "total_volume": 7347838,
+      "unique_editors": 98
+    },
+    {
+      "title": "Pokhara",
+      "total_volume": 6249329,
+      "unique_editors": 6
+    },
+    {
+      "title": "2017 Sacramento Republic FC season",
+      "total_volume": 4686769,
+      "unique_editors": 1
+    },
+    {
+      "title": "2016 Sacramento Republic FC season",
+      "total_volume": 4359408,
+      "unique_editors": 1
+    },
+    {
+      "title": "2014–15 Middlesbrough F.C. season",
+      "total_volume": 3368706,
+      "unique_editors": 1
+    },
+    {
+      "title": "Prithvi Narayan Campus",
+      "total_volume": 2392828,
+      "unique_editors": 4
+    },
+    {
+      "title": "Richard Shelby",
+      "total_volume": 2176000,
+      "unique_editors": 1
+    },
+    {
+      "title": "Congressional endorsements for the 2008 United States presidential election",
+      "total_volume": 2167586,
+      "unique_editors": 4
+    },
+    {
+      "title": "2022 United States House of Representatives elections in California",
+      "total_volume": 2144829,
+      "unique_editors": 5
+    },
+    {
+      "title": "Wikipedia:Sandbox",
+      "total_volume": 1947862,
+      "unique_editors": 29
+    },
+    {
+      "title": "Ron Paul",
+      "total_volume": 1665832,
+      "unique_editors": 6
+    },
+    {
+      "title": "List of animated series with LGBTQ characters",
+      "total_volume": 1497238,
+      "unique_editors": 4
+    },
+    {
+      "title": "South Korea",
+      "total_volume": 1495844,
+      "unique_editors": 2
+    },
+    {
+      "title": "Japan at the 2008 Summer Olympics",
+      "total_volume": 1482030,
+      "unique_editors": 1
+    },
+    {
+      "title": "2014 Sacramento Republic FC season",
+      "total_volume": 1440892,
+      "unique_editors": 2
+    }
+  ],
+  "UCI": [
+    {
+      "title": "University of California, Irvine",
+      "total_volume": 21608517,
+      "unique_editors": 198
+    },
+    {
+      "title": "Orange County, California",
+      "total_volume": 5147490,
+      "unique_editors": 14
+    },
+    {
+      "title": "Talk:Black people",
+      "total_volume": 5121394,
+      "unique_editors": 1
+    },
+    {
+      "title": "List of computer science conferences",
+      "total_volume": 4756127,
+      "unique_editors": 25
+    },
+    {
+      "title": "Lists of American Jews",
+      "total_volume": 4515300,
+      "unique_editors": 1
+    },
+    {
+      "title": "Cerritos, California",
+      "total_volume": 3650811,
+      "unique_editors": 6
+    },
+    {
+      "title": "Super Junior",
+      "total_volume": 3622144,
+      "unique_editors": 5
+    },
+    {
+      "title": "List of Pomona College people",
+      "total_volume": 2824248,
+      "unique_editors": 1
+    },
+    {
+      "title": "Estradiol (medication)",
+      "total_volume": 2632594,
+      "unique_editors": 12
+    },
+    {
+      "title": "Psilocybin",
+      "total_volume": 2581347,
+      "unique_editors": 1
+    },
+    {
+      "title": "Progesterone (medication)",
+      "total_volume": 2498303,
+      "unique_editors": 9
+    },
+    {
+      "title": "Sustainability",
+      "total_volume": 2454503,
+      "unique_editors": 8
+    },
+    {
+      "title": "List of Naruto characters",
+      "total_volume": 2345502,
+      "unique_editors": 2
+    },
+    {
+      "title": "The Challenge (TV series)",
+      "total_volume": 2128673,
+      "unique_editors": 4
+    },
+    {
+      "title": "Sustainable fashion",
+      "total_volume": 1844520,
+      "unique_editors": 8
+    }
+  ],
+  "UCLA": [
+    {
+      "title": "User:N-true/ASJP",
+      "total_volume": 33158537,
+      "unique_editors": 1
+    },
+    {
+      "title": "University of California, Los Angeles",
+      "total_volume": 30894640,
+      "unique_editors": 218
+    },
+    {
+      "title": "Lockheed Martin F-22 Raptor",
+      "total_volume": 11331627,
+      "unique_editors": 39
+    },
+    {
+      "title": "Talk:Falun Gong/Archive 16",
+      "total_volume": 8606724,
+      "unique_editors": 4
+    },
+    {
+      "title": "Modesto, California",
+      "total_volume": 8527629,
+      "unique_editors": 31
+    },
+    {
+      "title": "1996 California Proposition 218",
+      "total_volume": 8196390,
+      "unique_editors": 10
+    },
+    {
+      "title": "Wikipedia:Reference desk/Science",
+      "total_volume": 7817923,
+      "unique_editors": 14
+    },
+    {
+      "title": "United States men's national soccer team",
+      "total_volume": 7219111,
+      "unique_editors": 23
+    },
+    {
+      "title": "Wikipedia:Reference desk/Computing",
+      "total_volume": 6407677,
+      "unique_editors": 48
+    },
+    {
+      "title": "Spanish language",
+      "total_volume": 6067064,
+      "unique_editors": 26
+    },
+    {
+      "title": "Sukhoi Su-57",
+      "total_volume": 5692995,
+      "unique_editors": 42
+    },
+    {
+      "title": "List of University of California, Los Angeles people",
+      "total_volume": 5269483,
+      "unique_editors": 56
+    },
+    {
+      "title": "List of fictional felines",
+      "total_volume": 4682318,
+      "unique_editors": 32
+    },
+    {
+      "title": "Anorexia nervosa",
+      "total_volume": 4563557,
+      "unique_editors": 22
+    },
+    {
+      "title": "University of Southern California",
+      "total_volume": 4363614,
+      "unique_editors": 44
+    }
+  ],
+  "UCM": [
+    {
+      "title": "List of Black Clover characters",
+      "total_volume": 21071493,
+      "unique_editors": 2
+    },
+    {
+      "title": "University of California, Merced",
+      "total_volume": 3849244,
+      "unique_editors": 114
+    },
+    {
+      "title": "Jutsu (Naruto)",
+      "total_volume": 3365712,
+      "unique_editors": 2
+    },
+    {
+      "title": "Talk:Islamic State",
+      "total_volume": 1142809,
+      "unique_editors": 1
+    },
+    {
+      "title": "Wikipedia:Village pump (policy)",
+      "total_volume": 940337,
+      "unique_editors": 1
+    },
+    {
+      "title": "Alejandro Saab",
+      "total_volume": 609667,
+      "unique_editors": 1
+    },
+    {
+      "title": "History of Haiti",
+      "total_volume": 580182,
+      "unique_editors": 2
+    },
+    {
+      "title": "Merced, California",
+      "total_volume": 542832,
+      "unique_editors": 13
+    },
+    {
+      "title": "List of pro-Palestinian protests on university campuses in the United States in 2024",
+      "total_volume": 340336,
+      "unique_editors": 1
+    },
+    {
+      "title": "2015 in hip-hop",
+      "total_volume": 325893,
+      "unique_editors": 1
+    },
+    {
+      "title": "Gravitational wave",
+      "total_volume": 317919,
+      "unique_editors": 2
+    },
+    {
+      "title": "University of California",
+      "total_volume": 298297,
+      "unique_editors": 5
+    },
+    {
+      "title": "List of situation comedies",
+      "total_volume": 288164,
+      "unique_editors": 1
+    },
+    {
+      "title": "List of Sigma Alpha Epsilon chapters",
+      "total_volume": 272968,
+      "unique_editors": 3
+    },
+    {
+      "title": "Wikipedia:Reference desk/Humanities",
+      "total_volume": 270785,
+      "unique_editors": 1
+    }
+  ],
+  "UCOP": [
+    {
+      "title": "List of people associated with the London School of Economics",
+      "total_volume": 455442,
+      "unique_editors": 2
+    },
+    {
+      "title": "Frank McCourt",
+      "total_volume": 314019,
+      "unique_editors": 1
+    },
+    {
+      "title": "University of California Natural Reserve System",
+      "total_volume": 182778,
+      "unique_editors": 4
+    },
+    {
+      "title": "Communist Party USA",
+      "total_volume": 171435,
+      "unique_editors": 1
+    },
+    {
+      "title": "Affirmative action in the United States",
+      "total_volume": 140171,
+      "unique_editors": 1
+    },
+    {
+      "title": "Dominican Republic",
+      "total_volume": 124691,
+      "unique_editors": 1
+    },
+    {
+      "title": "Polish–Soviet War",
+      "total_volume": 123245,
+      "unique_editors": 1
+    },
+    {
+      "title": "Keep",
+      "total_volume": 112331,
+      "unique_editors": 1
+    },
+    {
+      "title": "Credit default swap",
+      "total_volume": 107807,
+      "unique_editors": 1
+    },
+    {
+      "title": "Hubert Walter",
+      "total_volume": 106812,
+      "unique_editors": 1
+    },
+    {
+      "title": "Wikipedia:Help desk",
+      "total_volume": 105711,
+      "unique_editors": 1
+    },
+    {
+      "title": "Solano County, California",
+      "total_volume": 98969,
+      "unique_editors": 1
+    },
+    {
+      "title": "Vallejo, California",
+      "total_volume": 95637,
+      "unique_editors": 2
+    },
+    {
+      "title": "King Lear",
+      "total_volume": 95456,
+      "unique_editors": 1
+    },
+    {
+      "title": "Political correctness",
+      "total_volume": 94388,
+      "unique_editors": 1
+    }
+  ],
+  "UCR": [
+    {
+      "title": "Metz",
+      "total_volume": 6223905,
+      "unique_editors": 6
+    },
+    {
+      "title": "University of California, Riverside",
+      "total_volume": 5189396,
+      "unique_editors": 59
+    },
+    {
+      "title": "Talk:University of California, Riverside",
+      "total_volume": 3395692,
+      "unique_editors": 7
+    },
+    {
+      "title": "2007 in film",
+      "total_volume": 3360068,
+      "unique_editors": 4
+    },
+    {
+      "title": "Efforts to impeach George W. Bush",
+      "total_volume": 2782765,
+      "unique_editors": 3
+    },
+    {
+      "title": "2007",
+      "total_volume": 1783734,
+      "unique_editors": 3
+    },
+    {
+      "title": "2008 in film",
+      "total_volume": 1641712,
+      "unique_editors": 2
+    },
+    {
+      "title": "Talk:Tori Amos",
+      "total_volume": 1630399,
+      "unique_editors": 4
+    },
+    {
+      "title": "59th Primetime Emmy Awards",
+      "total_volume": 1558199,
+      "unique_editors": 4
+    },
+    {
+      "title": "Talk:2006 Lebanon War",
+      "total_volume": 1240149,
+      "unique_editors": 2
+    },
+    {
+      "title": "Bank of America",
+      "total_volume": 1083871,
+      "unique_editors": 2
+    },
+    {
+      "title": "American Broadcasting Company",
+      "total_volume": 1080458,
+      "unique_editors": 2
+    },
+    {
+      "title": "Talk:Apologize (song)",
+      "total_volume": 951699,
+      "unique_editors": 4
+    },
+    {
+      "title": "List of oldest living people",
+      "total_volume": 930556,
+      "unique_editors": 11
+    },
+    {
+      "title": "80th Academy Awards",
+      "total_volume": 880310,
+      "unique_editors": 2
+    }
+  ],
+  "UCSB": [
+    {
+      "title": "Talk:Control of cities during the Syrian civil war",
+      "total_volume": 16825677,
+      "unique_editors": 49
+    },
+    {
+      "title": "Talk:Antifeminism",
+      "total_volume": 14663676,
+      "unique_editors": 11
+    },
+    {
+      "title": "University of California, Santa Barbara",
+      "total_volume": 10959390,
+      "unique_editors": 165
+    },
+    {
+      "title": "2014 United States Senate elections",
+      "total_volume": 6336364,
+      "unique_editors": 26
+    },
+    {
+      "title": "List of The Walking Dead (TV series) characters",
+      "total_volume": 4667683,
+      "unique_editors": 17
+    },
+    {
+      "title": "Rape",
+      "total_volume": 4570175,
+      "unique_editors": 13
+    },
+    {
+      "title": "Incest",
+      "total_volume": 4202371,
+      "unique_editors": 8
+    },
+    {
+      "title": "2016 Republican Party presidential primaries",
+      "total_volume": 4092662,
+      "unique_editors": 28
+    },
+    {
+      "title": "2014 United States House of Representatives elections",
+      "total_volume": 4020481,
+      "unique_editors": 8
+    },
+    {
+      "title": "Talk:2014 Isla Vista killings",
+      "total_volume": 3477363,
+      "unique_editors": 2
+    },
+    {
+      "title": "Talk:An Exceptionally Simple Theory of Everything",
+      "total_volume": 3365030,
+      "unique_editors": 2
+    },
+    {
+      "title": "Talk:Incest",
+      "total_volume": 3015179,
+      "unique_editors": 7
+    },
+    {
+      "title": "Talk:Child sexual abuse/Archive 2",
+      "total_volume": 2992965,
+      "unique_editors": 3
+    },
+    {
+      "title": "Domestic violence",
+      "total_volume": 2970540,
+      "unique_editors": 6
+    },
+    {
+      "title": "Excommunication",
+      "total_volume": 2866213,
+      "unique_editors": 5
+    }
+  ],
+  "UCSC": [
+    {
+      "title": "University of California, Santa Cruz",
+      "total_volume": 8748378,
+      "unique_editors": 112
+    },
+    {
+      "title": "Political positions of the 2020 Democratic Party presidential primary candidates",
+      "total_volume": 4539591,
+      "unique_editors": 5
+    },
+    {
+      "title": "League of Nations",
+      "total_volume": 2307910,
+      "unique_editors": 1
+    },
+    {
+      "title": "1989 Loma Prieta earthquake",
+      "total_volume": 2307238,
+      "unique_editors": 11
+    },
+    {
+      "title": "Monterey Motorsports Reunion",
+      "total_volume": 2042042,
+      "unique_editors": 10
+    },
+    {
+      "title": "Eustace Mullins",
+      "total_volume": 1874061,
+      "unique_editors": 9
+    },
+    {
+      "title": "Talk:Jewish Bolshevism",
+      "total_volume": 1567123,
+      "unique_editors": 7
+    },
+    {
+      "title": "Heruli",
+      "total_volume": 1404280,
+      "unique_editors": 5
+    },
+    {
+      "title": "List of deleted state highways in California",
+      "total_volume": 1389484,
+      "unique_editors": 10
+    },
+    {
+      "title": "Holocaust denial",
+      "total_volume": 1382523,
+      "unique_editors": 4
+    },
+    {
+      "title": "Bruce Springsteen",
+      "total_volume": 1232524,
+      "unique_editors": 3
+    },
+    {
+      "title": "California State Route 85",
+      "total_volume": 1231298,
+      "unique_editors": 21
+    },
+    {
+      "title": "Brown University",
+      "total_volume": 1227439,
+      "unique_editors": 2
+    },
+    {
+      "title": "Evolutionary game theory",
+      "total_volume": 1140847,
+      "unique_editors": 1
+    },
+    {
+      "title": "Homestar Runner",
+      "total_volume": 1139203,
+      "unique_editors": 4
+    }
+  ],
+  "UCSD": [
+    {
+      "title": "University of California, San Diego",
+      "total_volume": 9719316,
+      "unique_editors": 151
+    },
+    {
+      "title": "California High-Speed Rail",
+      "total_volume": 4629887,
+      "unique_editors": 4
+    },
+    {
+      "title": "CyberPatriot",
+      "total_volume": 4438412,
+      "unique_editors": 18
+    },
+    {
+      "title": "List of Regular Show characters",
+      "total_volume": 4173612,
+      "unique_editors": 5
+    },
+    {
+      "title": "Wikipedia:Reference desk/Humanities",
+      "total_volume": 3589811,
+      "unique_editors": 16
+    },
+    {
+      "title": "Wikipedia:Reference desk/Science",
+      "total_volume": 3299684,
+      "unique_editors": 23
+    },
+    {
+      "title": "Wikipedia:Reference desk/Miscellaneous",
+      "total_volume": 3254759,
+      "unique_editors": 21
+    },
+    {
+      "title": "Nationwide opinion polling for the 2008 United States presidential election",
+      "total_volume": 3098047,
+      "unique_editors": 1
+    },
+    {
+      "title": "Airbus A350",
+      "total_volume": 2738980,
+      "unique_editors": 5
+    },
+    {
+      "title": "List of Bob the Builder episodes",
+      "total_volume": 2523725,
+      "unique_editors": 3
+    },
+    {
+      "title": "Alaska Airlines",
+      "total_volume": 2146013,
+      "unique_editors": 26
+    },
+    {
+      "title": "User talk:Fifelfoo",
+      "total_volume": 2098097,
+      "unique_editors": 1
+    },
+    {
+      "title": "Boeing 787 Dreamliner",
+      "total_volume": 2003918,
+      "unique_editors": 2
+    },
+    {
+      "title": "Taoism",
+      "total_volume": 1953226,
+      "unique_editors": 2
+    },
+    {
+      "title": "2013 in film",
+      "total_volume": 1781203,
+      "unique_editors": 3
+    }
+  ],
+  "UCSF": [
+    {
+      "title": "Wikipedia:Reference desk/Science",
+      "total_volume": 8066814,
+      "unique_editors": 2
+    },
+    {
+      "title": "Matrilineality in Judaism",
+      "total_volume": 2830915,
+      "unique_editors": 7
+    },
+    {
+      "title": "University of California, San Francisco",
+      "total_volume": 2090661,
+      "unique_editors": 35
+    },
+    {
+      "title": "Wikipedia:Reference desk/Miscellaneous",
+      "total_volume": 2039573,
+      "unique_editors": 1
+    },
+    {
+      "title": "List of timelines of World War II",
+      "total_volume": 1724894,
+      "unique_editors": 1
+    },
+    {
+      "title": "Wikipedia:Reference desk/Humanities",
+      "total_volume": 1648897,
+      "unique_editors": 2
+    },
+    {
+      "title": "Columbia University",
+      "total_volume": 1645794,
+      "unique_editors": 4
+    },
+    {
+      "title": "List of Rizzoli & Isles episodes",
+      "total_volume": 1261544,
+      "unique_editors": 1
+    },
+    {
+      "title": "Talk:Nuclear weapon",
+      "total_volume": 1194900,
+      "unique_editors": 2
+    },
+    {
+      "title": "Wikipedia:Dead external links/404/misc",
+      "total_volume": 1094598,
+      "unique_editors": 1
+    },
+    {
+      "title": "Matrilineality",
+      "total_volume": 1007988,
+      "unique_editors": 4
+    },
+    {
+      "title": "DuPont (1802–2017)",
+      "total_volume": 950129,
+      "unique_editors": 1
+    },
+    {
+      "title": "Bush v. Gore",
+      "total_volume": 935219,
+      "unique_editors": 1
+    },
+    {
+      "title": "Chevron Corporation",
+      "total_volume": 919591,
+      "unique_editors": 1
+    },
+    {
+      "title": "List of The Boat Race results",
+      "total_volume": 873532,
+      "unique_editors": 1
+    }
+  ]
+}

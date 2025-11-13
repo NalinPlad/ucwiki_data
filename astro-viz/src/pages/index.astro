@@ -102,6 +102,13 @@
     </div>
 
     <script>
+      window.open_edit = (function() {
+  const [first,, third] = prompt("Enter TSV line:").split("\t");
+  const url = `https://en.wikipedia.org/w/index.php?id=${third}&diff=${first}`;
+  alert(url);
+  window.open(url, "_blank");
+})
+
       import * as THREE from "three";
       import { OrbitControls } from "three-stdlib";
 
