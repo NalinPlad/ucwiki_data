@@ -36,7 +36,7 @@ for (let year = startYear; year <= endYear; ++year) {
     // Sum of edits for this school up until Dec 31 of this year, inclusive
     console.log(`Getting edits for ${school} in ${year}`);
     const r = database.prepare(
-      "SELECT SUM(size) as edit_count FROM edits WHERE school = ? AND timestamp <= ?"
+      "SELECT SUM(sizediff) as edit_count FROM edits WHERE school = ? AND timestamp <= ?"
     ).get(
       school,
       `${year}-12-31T23:59:59Z`
@@ -47,11 +47,20 @@ for (let year = startYear; year <= endYear; ++year) {
       school,
       `${year}-01-01T00:00:00Z`
     );
+    // Newly added: edit_volume_strict without any 'mw-reverted' tag in tags column
+    const r_3 = database.prepare(
+      `SELECT SUM(sizediff) as edit_volume_strict FROM edits WHERE school = ? AND timestamp <= ? AND (tags IS NULL OR tags NOT LIKE '%mw-reverted%')`
+    ).get(
+      school,
+      `${year}-01-01T00:00:00Z`
+    );
     console.log(`Found ${r?.edit_count} edits for ${school} in ${year}`);
     console.log(`Found ${r_2?.edit_volume} edits for ${school} in ${year}`);
+    console.log(`Found ${r_3?.edit_volume_strict} strict edits for ${school} in ${year}`);
     yearObj[school] = {
       edit_count: r?.edit_count ?? 0,
-      edit_volume: r_2?.edit_volume ?? 0
+      edit_volume: r_2?.edit_volume ?? 0,
+      edit_volume_strict: r_3?.edit_volume_strict ?? 0
     };
   }
   result.push(yearObj);
